@@ -188,7 +188,7 @@
 
   /* ---------- BANNER ---------- */
   .banner{
-    padding: 120px 8vw 80px;
+    padding: 180px 8vw 80px;
     position: relative;
   }
   .banner-container{
@@ -205,18 +205,18 @@
   }
   .banner-text{
     position: absolute;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: clamp(4rem, 10vw, 8rem);
+    font-family: 'Comforter Brush', cursive;
+    font-size: clamp(5rem, 12vw, 10rem);
     font-weight: 700;
     color: #6ea8ff;
     letter-spacing: -0.02em;
   }
   .banner-top-left{
-    top: -80px;
+    top: -110px;
     left: 5%;
   }
   .banner-bottom-right{
-    bottom: -80px;
+    bottom: -110px;
     right: 5%;
   }
 
@@ -405,11 +405,19 @@
   }
   .skill-grid{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 0;
+  }
+  .skill-row{
+    display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     justify-content: center;
     align-items: flex-start;
-    padding: 36px 0;
+    width: 100%;
   }
   .skill-item{
     display: flex;
@@ -419,10 +427,21 @@
     cursor: pointer;
     transition: transform 0.3s ease;
   }
+  .skill-item i,
+  .skill-item img{
+    width: 4rem;
+    height: 4rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
   .skill-item i{
+    display: block;
+    line-height: 1;
     font-size: 4rem;
     color: #3d7bff;
-    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .skill-item img{
+    display: block;
+    object-fit: contain;
   }
   .skill-item p{
     font-family: 'Space Mono', monospace;
@@ -431,7 +450,8 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
-  .skill-item:hover i{
+  .skill-item:hover i,
+  .skill-item:hover img{
     transform: scale(1.2);
     filter: drop-shadow(0 0 15px #3d7bff);
   }
