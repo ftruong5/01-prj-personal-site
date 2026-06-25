@@ -6,11 +6,13 @@
   <title>Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav>
+  <div class="logo">Felicia's Portfolio</div>
   <div class="nav-links">
     <a href="#bio">About me</a>
     <a href="#skills">Skills</a>
@@ -19,11 +21,19 @@
   </div>
 </nav>
 
+<!-- BANNER -->
+<section class="banner">
+  <div class="banner-container">
+    <div class="banner-text banner-top-left">Felicia</div>
+    <img src="img/header.jpg" alt="Banner">
+    <div class="banner-text banner-bottom-right">Truong</div>
+  </div>
+</section>
+
 <!-- ABOUT ME / HERO -->
 <section class="hero" id="bio">
   <div class="hero-portrait">
-    <!-- Replace this with: <img src="your-photo.jpg" alt="Photo of Felicia"> -->
-    <span class="tag">[ YOUR PHOTO GOES HERE ]</span>
+    <img src="img/me.jpg" alt="Photo of Felicia">
   </div>
 
   <div class="hero-content">
@@ -47,13 +57,23 @@
   </div>
  
   <div class="skills-wrap">
-    <div class="skill-col">
-      <ul class="skill-list">
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Adobe Illustrator & Photoshop</li>
-        <li>Figma</li>
-      </ul>
+    <div class="skill-grid">
+      <div class="skill-item">
+        <i class="fab fa-html5"></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill-item">
+        <i class="fa-brands fa-css3-alt"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-figma"></i>
+        <p>Figma</p>
+      </div>
     </div>
   </div>
 </section>
@@ -64,6 +84,7 @@
     <div>
       <h2>Projects</h2>
     </div>
+    <p>Coming Soon</p>
   </div>
 
   <div class="project-grid">
