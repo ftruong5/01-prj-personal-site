@@ -1,0 +1,398 @@
+
+/* =================================
+            CASE STUDY
+================================= */
+
+.case-study-main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 150px 7vw 90px;
+  color: #bcd9f7;
+}
+
+/* ---------- PROJECT HEADER ---------- */
+
+.case-header {
+  margin-bottom: 48px;
+}
+
+.back-link,
+.case-back-bottom {
+  display: inline-block;
+  color: #8fd7ff;
+  font-size: 0.9rem;
+  transition: color 0.25s ease;
+}
+
+.back-link {
+  margin-bottom: 34px;
+}
+
+.back-link:hover,
+.case-back-bottom:hover {
+  color: #ffffff;
+}
+
+.case-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: #6ea8ff;
+}
+
+.case-header h1 {
+  color: #bcd9f7;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 16px 0 22px;
+}
+
+.case-lede {
+  max-width: 720px;
+  color: #bcd9f7;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.8;
+}
+
+/* ---------- PROJECT TAGS ---------- */
+
+.case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.case-tags span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: #8fd7ff;
+  border: 1px solid #1d2436;
+  border-radius: 6px;
+  padding: 7px 12px;
+}
+
+/* ---------- PROJECT DETAILS ---------- */
+
+.case-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 38px;
+  padding: 24px 0;
+  border-top: 1px solid #1d2436;
+  border-bottom: 1px solid #1d2436;
+}
+
+.case-facts h3 {
+  color: #6ea8ff;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.case-facts p {
+  color: #bcd9f7;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ---------- HERO IMAGE ---------- */
+
+.case-hero-image {
+  margin: 0 0 20px;
+  padding: 12px;
+  background: #0c0f18;
+  border: 1px solid #1d2436;
+  border-radius: 0 18px 0 18px;
+  overflow: hidden;
+}
+
+.case-hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.case-hero-image figcaption,
+.case-screenshot figcaption {
+  color: #8893a8;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* ---------- CONTENT SECTIONS ---------- */
+
+.case-section {
+  padding: 58px 0;
+  border-bottom: 1px solid #1d2436;
+}
+
+.case-section h2 {
+  color: #bcd9f7;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 14px 0 24px;
+}
+
+.case-section > p:not(.case-eyebrow) {
+  max-width: 780px;
+  color: #bcd9f7;
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-top: 16px;
+}
+
+/* ---------- DESIGN QUESTION ---------- */
+
+.case-question {
+  margin-top: 30px;
+  padding: 28px;
+  background: #0c0f18;
+  border: 1px solid #1d2436;
+  border-left: 3px solid #3d7bff;
+}
+
+.case-question .question-label {
+  color: #6ea8ff;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.case-question h3 {
+  color: #bcd9f7;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 1.6;
+}
+
+/* ---------- DESIGN DECISIONS ---------- */
+
+.case-decision {
+  margin-top: 30px;
+  padding-left: 20px;
+  border-left: 1px solid #1d2436;
+}
+
+.case-decision h3 {
+  color: #8fd7ff;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.case-decision p {
+  max-width: 760px;
+  color: #bcd9f7;
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+/* ---------- GAMEPLAY SCREENSHOTS ---------- */
+
+.case-screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.case-screenshot {
+  min-width: 0;
+  padding: 12px;
+  background: #0c0f18;
+  border: 1px solid #1d2436;
+  border-radius: 0 14px 0 14px;
+  overflow: hidden;
+  transition: border-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.case-screenshot:hover {
+  border-color: #3d7bff;
+  transform: translateY(-3px);
+}
+
+.case-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+/* ---------- NASA EXPLORER SCREENSHOTS ---------- */
+
+.case-image-block {
+  margin-top: 30px;
+  padding: 12px;
+  background: #0c0f18;
+  border: 1px solid #1d2436;
+  border-radius: 0 14px 0 14px;
+  overflow: hidden;
+}
+
+.case-image-block img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+/* ---------- PLAYTEST FEEDBACK ---------- */
+
+.case-feedback {
+  margin: 28px 0;
+  padding: 20px 26px;
+  background: #0c0f18;
+  border-left: 3px solid #3d7bff;
+  color: #8fd7ff;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* ---------- FUTURE IMPROVEMENTS ---------- */
+
+.case-next-step {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #1b3fb8;
+  border-radius: 50%;
+  color: #8fd7ff;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+}
+
+.case-next-step h3 {
+  color: #8fd7ff;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 3px 0 8px;
+}
+
+.case-next-step p {
+  color: #bcd9f7;
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+/* ---------- TAKEAWAY ---------- */
+
+.case-takeaway {
+  border-bottom: none;
+}
+
+/* ---------- BOTTOM LINKS ---------- */
+
+.case-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.case-actions .btn-primary {
+  display: inline-block;
+}
+
+.case-back-bottom {
+  margin-bottom: 0;
+}
+
+.case-study-main a:focus-visible {
+  outline: 2px solid #8fd7ff;
+  outline-offset: 4px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+  .case-study-main {
+    padding: 130px 6vw 60px;
+  }
+
+  .case-facts {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .case-screenshot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-section {
+    padding: 42px 0;
+  }
+
+  .case-question {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-study-main {
+    padding-top: 120px;
+  }
+
+  .case-header h1 {
+    font-size: 3rem;
+  }
+
+  .case-next-step {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .step-number {
+    width: 32px;
+    height: 32px;
+    font-size: 0.68rem;
+  }
+
+  .case-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .case-screenshot,
+  .back-link,
+  .case-back-bottom {
+    transition: none;
+  }
+
+  .case-screenshot:hover {
+    transform: none;
+  }
+}

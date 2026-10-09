@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NASA Space Explorer | Felicia Truong</title>
+  <meta
+    name="description"
+    content="A case study of NASA Space Explorer, a web app for exploring NASA's Astronomy Picture of the Day archive."
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Shared portfolio styles -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Shared case study styles -->
+  <link rel="stylesheet" href="case-study.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="../index.html" class="logo">
+      Felicia's Portfolio
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html#bio">About me</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="case-study-main">
+
+    <!-- PROJECT HEADER -->
+    <header class="case-header">
+
+      <a href="../index.html#projects" class="back-link">
+        ← Back to projects
+      </a>
+
+      <p class="case-eyebrow">Web app · NASA API</p>
+
+      <h1>NASA Space Explorer</h1>
+
+      <p class="case-lede">
+        An interactive gallery that makes exploring NASA's
+        Astronomy Picture of the Day archive simple, visual,
+        and engaging.
+      </p>
+
+      <div class="case-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>REST API</span>
+      </div>
+
+      <div class="case-facts">
+        <div>
+          <h3>My role</h3>
+          <p>Interface design and front-end development</p>
+        </div>
+
+        <div>
+          <h3>Tools</h3>
+          <p>HTML, CSS, JavaScript, NASA APOD API</p>
+        </div>
+
+        <div>
+          <h3>Project type</h3>
+          <p>Personal web development project</p>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- HERO IMAGE -->
+    <figure class="case-hero-image">
+      <img
+        src="../img/nasa-explorer-thumbnail.png"
+        alt="NASA Space Explorer website displaying astronomy images"
+      >
+    </figure>
+
+    <!-- 01: PROJECT OVERVIEW -->
+    <section class="case-section" id="overview">
+
+      <p class="case-eyebrow">01 / Project overview</p>
+
+      <h2>Project overview</h2>
+
+      <p>
+        NASA Space Explorer is a web app that allows users to
+        explore NASA's Astronomy Picture of the Day (APOD)
+        archive by selecting a start and end date. Using NASA's
+        API, the app retrieves astronomy imagery and presents
+        the results in a visual gallery.
+      </p>
+
+      <p>
+        I built this project to practice my HTML, CSS, and
+        JavaScript skills while learning how to work with an
+        external API. I also wanted to create an experience
+        that makes discovering space imagery feel approachable
+        and enjoyable.
+      </p>
+
+    </section>
+
+    <!-- 02: THE CHALLENGE -->
+    <section class="case-section" id="challenge">
+
+      <p class="case-eyebrow">02 / The challenge</p>
+
+      <h2>Making space easier to explore</h2>
+
+      <p>
+        NASA's APOD archive offers astronomy content from
+        different dates, but I wanted to make it easy for
+        visitors to explore multiple entries in one place
+        instead of viewing just one image at a time.
+      </p>
+
+      <p>
+        My challenge was to connect the API to a simple
+        interface, organize the results into an easy-to-browse
+        gallery, and provide more information without
+        overwhelming the main viewing experience.
+      </p>
+
+      <div class="case-question">
+        <p class="question-label">My design question</p>
+
+        <h3>
+          How might I make discovering astronomy imagery
+          intuitive and engaging through a simple,
+          interactive web experience?
+        </h3>
+      </div>
+
+    </section>
+
+    <!-- 03: DESIGNING THE EXPERIENCE -->
+    <section class="case-section" id="design">
+
+      <p class="case-eyebrow">03 / Design and development</p>
+
+      <h2>Designing the experience</h2>
+
+      <p>
+        I focused on making the main interactions easy to
+        understand while giving the website a visual identity
+        inspired by space.
+      </p>
+
+      <div class="case-decision">
+        <h3>Date-range exploration</h3>
+
+        <p>
+          I added start and end date inputs so users can choose
+          a period to explore. JavaScript uses those selections
+          to request the corresponding entries from NASA's API.
+          The date inputs also provide a default range and limit
+          the available dates to the archive's supported period.
+        </p>
+      </div>
+
+      <div class="case-decision">
+        <h3>A visual image gallery</h3>
+
+        <p>
+          Instead of presenting API results as raw data, I
+          organized image entries into gallery cards featuring
+          the image, title, and date. This gives users a visual
+          way to scan the results and decide what they want
+          to explore further.
+        </p>
+      </div>
+
+      <!-- GALLERY SCREENSHOT -->
+      <div class="case-image-block">
+        <img
+          src="img/nasa-date-selection.png"
+          alt="NASA Space Explorer showing selecting date range"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="case-decision">
+        <h3>More details without clutter</h3>
+
+        <p>
+          Clicking a gallery card opens a modal with a larger
+          image, its title, date, and NASA's explanation.
+          Keeping the explanation in the modal allows the
+          gallery to remain focused on browsing while giving
+          users access to more context when they want it.
+        </p>
+      </div>
+
+      <!-- MODAL SCREENSHOT -->
+      <div class="case-image-block">
+        <img
+          src="img/nasa-modal.png"
+          alt="NASA Space Explorer detail modal showing a larger astronomy image and its explanation"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="case-decision">
+        <h3>Small moments of discovery</h3>
+
+        <p>
+          I added a "Did You Know?" section featuring random
+          space facts. A New Fact button lets users discover
+          another fact without leaving the page. This adds
+          a small interactive element beyond browsing images.
+        </p>
+      </div>
+
+      <div class="case-decision">
+        <h3>A space-inspired visual identity</h3>
+
+        <p>
+          I used a dark background, a subtle animated starfield,
+          blue accents, and the NASA worm logo to establish a
+          consistent space theme. I also used typography,
+          spacing, and interactive effects to help important
+          elements stand out.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- 04: BUILDING THE INTERACTION -->
+    <section class="case-section" id="development">
+
+      <p class="case-eyebrow">04 / Development</p>
+
+      <h2>Connecting the interface to NASA's API</h2>
+
+      <p>
+        One of the main technical challenges was connecting
+        the date inputs to NASA's API and turning the returned
+        data into a working gallery.
+      </p>
+
+      <p>
+        I used JavaScript's Fetch API to request entries for
+        the selected date range, then dynamically created
+        gallery cards from the results. I also separated the
+        date-input setup into its own JavaScript file to keep
+        that functionality organized.
+      </p>
+
+      <p>
+        I added feedback for different states of the experience,
+        including prompts when dates are missing, a loading
+        message while the request is in progress, an error
+        message if the request fails, and a message when no
+        displayable images are found.
+      </p>
+
+      <p>
+        Working through these details taught me that building
+        a useful interface involves more than displaying
+        successful results. The experience also needs to guide
+        users when information is missing or something goes
+        wrong.
+      </p>
+
+    </section>
+
+    <!-- 05: FUTURE IMPROVEMENTS -->
+    <section class="case-section" id="next-steps">
+
+      <p class="case-eyebrow">05 / Next steps</p>
+
+      <h2>What I would improve next</h2>
+
+      <p>
+        If I continued developing NASA Space Explorer, I would
+        focus on helping users discover more content and making
+        the experience even more useful.
+      </p>
+
+      <div class="case-next-step">
+        <span class="step-number">01</span>
+
+        <div>
+          <h3>Save favorite discoveries</h3>
+
+          <p>
+            Let users bookmark images they enjoy so they can
+            revisit their favorite discoveries later.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-next-step">
+        <span class="step-number">02</span>
+
+        <div>
+          <h3>Expand content exploration</h3>
+
+          <p>
+            Explore ways to help users discover more of NASA's
+            content, including clearer ways to handle entries
+            that feature videos instead of images.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-next-step">
+        <span class="step-number">03</span>
+
+        <div>
+          <h3>Refine accessibility and usability</h3>
+
+          <p>
+            Continue improving keyboard navigation, accessible
+            labels, and modal interactions so more people can
+            explore the site comfortably.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 06: KEY TAKEAWAY -->
+    <section class="case-section case-takeaway" id="takeaway">
+
+      <p class="case-eyebrow">06 / Reflection</p>
+
+      <h2>Key takeaway</h2>
+
+      <p>
+        Building NASA Space Explorer helped me connect front-end
+        development with interface design. I learned how to
+        retrieve information from an external API, transform
+        that data into interactive components, and create
+        different states to guide users through an experience.
+      </p>
+
+      <p>
+        The project also showed me how visual presentation and
+        small interactions can shape the way people explore
+        information. Moving forward, I want to keep building
+        products that balance technical functionality with
+        thoughtful, approachable design.
+      </p>
+
+    </section>
+
+    <!-- PROJECT LINKS -->
+    <div class="case-actions">
+
+      <a
+        href="https://ftruong5.github.io/07-nasa-space-explorer/"
+        class="btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        EXPLORE THE LIVE SITE ↗
+      </a>
+
+      <a href="../index.html#projects" class="case-back-bottom">
+        ← Back to all projects
+      </a>
+
+    </div>
+
+  </main>
+
+  <footer>
+    Designed by Felicia Truong. Made with HTML & CSS.
+  </footer>
+
+</body>
+</html>
